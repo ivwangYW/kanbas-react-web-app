@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Edit Profile</title>
+</head>
+
+
+<body>
+<form>
+    <h2>Yiwei Wang</h2>
+    <label name="name">Name:*</label> 
+    <input type="text" name="name" value="Yiwei Wang">
+    <label name="pronouns">Pronouns:</label>
+    <select name="pronouns" id="idPronouns">
+        <option name="pronouns" selected>None</option>
+        <option name="pronouns">Other</option>
+    </select>
+    <br><br>
+    <label for="idEditTitle" name="editTitle">Title</label>
+    <input type="text" name="editTitle" id="idEditTitle">
+    <h3>Contact</h3>
+    <p>No registered services, you can add some on the <a href="#">settings</a> page.</p>
+    <h3>Contact</h3>
+    <p>No registered services, you can add some one the <a href="#">settings</a> page.</p>
+    <h3>Biography</h3>
+    Student, Software Engineer, AI, CPA.<br>
+    <textarea cols="48" rows="3">Student, Software Engineer, AI, CPA. </textarea>
+    <h3>Links</h3>
+    <ul>
+        <li>
+            <a href="https://www.youtube.com" target="_blank" style="color: blue; text-decoration: underline;" id="idLinkYouTube">
+                YouTube
+                <span>↗</span></a><label style="color:blue;" for="idLinkYouTube">Link to an external site.</label>
+              
+        </li>
+    </ul>
+    <!-----to add the input boxes-->
+    <form action="/submit-your-link" method="post">
+        <table>
+          <tr>
+            <th>Title</th>
+            <th>URL</th>
+          </tr>
+          <tr>
+            <td><input type="text" name="title" value="YouTube" /></td>
+            <td>→ <input type="text" value="https://www.youtube.com"></td>
+            <td><a href="#" style="text-decoration: underline; color: blue;">Remove</a></td>
+          </tr>
+        </table>
+      </form>
+
+    <button id="buttonEditAddLink">Add another link</button><br>
+    <button id="buttonEditCancel">Cancel</button>
+    <a href="/Kanbas/Account/Profile/screen.html">
+        <button type=button id="buttonEditSaveProfile">Save Profile</button>
+    </a><br>
+    
+    <a href="/Kanbas/Account/Profile/Edit/screen.html">
+        <button type="button" id="buttonEditEditProfile">Edit Profile</button>
+    </a>
+    <a href="/Kanbas/Account/Profile/screen.html">
+        <button type=button id="buttonEditCancelProfile">Cancel Editing</button>
+    </a>
+    
+</form>
+</body>
+</html>

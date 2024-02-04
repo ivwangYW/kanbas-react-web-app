@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Course_Details</title>
+</head>
+
+<body>
+    <form>
+
+    
+        <h2>Course Details</h2>
+        <table style="text-align: left;">
+            <colgroup>
+                <col span="1" style="width: 20%">
+                <col span="1" style="width: 80%">
+            </colgroup>
+            <tr>
+                <th>Image:</th>
+                <td>
+                    <div>
+                        <button id="idCourse_Detail_image">Choose Image</button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Name:
+                </th>
+                <td>
+                    <p id="idSettingsCourseName">CS4550 12631 Web Development SEC 01 Fall 2023 [BOS-1-TR]</p>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Course Code:
+                </th>
+                <td>
+                    CS4550.12631.202410
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Blueprint Course:
+                </th>
+                <td>
+                    No
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Course Template:
+                </th>
+                <td>
+                    <input type="checkbox" name="idCourseTemplate_Enable" id="idCourseTemplateEnable">
+                    <label for="idCourseTemplateEnable" name="idCourseTemplate_Enable" style="color: gray;">Enable course as a Course Template</label>
+                </td>
+            </tr>
+            <tr>
+                <th>Time Zone:</th>
+                <td>
+                    <select name="timeZone" id="selectTimeZone">
+                        <option value="timeZone_CT">(GMT -6:00) Central Time (US &amp; Canada)</option>
+                        <option selected value="timeZone_ET">Eastern Time(US&Canada)(-5:00/-4:00)</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    SIS ID
+                </th>
+                <td id="course_Details_sisID">
+                    CS4550.12361.202410
+                </td>
+            </tr>
+            <tr>
+                <th>Subaccount</th>
+                <td id="course_Details_subacct">
+                    CS Undergrad
+                </td>
+
+            </tr>
+            <tr>
+                <th>Term:</th>
+                <td>202410_1 Spring 2024 Semester Full Term</td>
+            </tr>
+            <tr>
+                <th valign="top">Participation:</th>
+                <td>
+                    <select name="course_Details_participation">
+                        <option value="term">Term</option>
+                    </select>
+                    <p>Course Participation is limited to <b>term</b> start and end dates. </p>
+                    <label for="idCourse_Detail_startDate">Start</label>
+                    <input type="date" id="idCourse_Detail_startDate"><br><br>
+                    <label for="idCourse_Detail_endDate">End</label>
+                    <input type="date" id="idCourse_Detail_endDate">
+
+                    <!--The second half-->
+                    <br>
+                    <input type="checkbox" id="idCourse_Detail_restrictBefore">
+                    <label for="idCourse_Detail_restrictBefore">Restrict students from viewing course before term start date</label>
+                    <br>
+                    <input type="checkbox" id="idCourse_Detail_restrictAfter">
+                    <label for="idCourse_Detail_restrictAfter">Restrict students from viewing course after term start date</label>
+
+                </td>
+            
+            </tr>
+            <tr>
+                <th valign="top">
+                    Default due time:
+                </th>
+                <td>
+                    <select name="defaultTime" >
+                        <option selected name="accountDefault">Account default(11:59pm)</option>
+                    </select>
+                    <p>This influences the user interface for setting due dates. It does not change the time<br>
+                        due for any existing assignments.</p>
+                </td>
+            </tr>
+            <tr>
+                <th valign="top">
+                    Language:
+                </th>
+                <td>
+                    <select name="selectLanguage">
+                        <option selected value="notSetDefault">Not set (user - configurable, default to English)</option>
+                    </select>
+                    <p>This will override any user / system language preferences.  This is only recommended<br>
+                        for foreign language courses </p>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    File Storage:
+                </th>
+                <td>
+                    10000 metabytes
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Large Course:
+                </th>
+                <td>
+                    <input type="checkbox" id="launchSpeedGrader">
+                    <label for="launchSpeedGrader">Launch SpeedGrader Filtered by Student Group</label>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Grading Scheme:
+                </th>
+                <td>
+                    <input type="checkbox" name="editEnableGradingScheme" id="idEditEnableGradingScheme" >
+                    <label for="idEditEnableGradingScheme">Enable Course Grading Scheme</label>
+                </td>
+            </tr>
+            <tr>
+                <th>License:</th>
+                <td>
+                    <select name="editLicense" id="idEditLicense">
+                        <option value="private">Private (Copyrighted)</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>File Copyright:</th>
+                <td>
+                    <input type="checkbox" name="editCopyright" value="copyrightInfoNeeded" id="idCopyrightNeeded">
+                    <label for="idCopyrightNeeded">Copyright and license information must be provided for files before they<br> are published.</label>
+
+                </td>
+            </tr>
+            <tr>
+                <th valign="top">
+                    Visibility:
+                </th>
+                <td>
+                    If you need to make your course public please contact your<br> administrator/support.<br>
+                    <select name="selectVisibility" id="idVisibility" disabled>
+                        <option selected value="courseVisible" >Course</option>
+                        <option value="visibilityOther">Other Option</option>
+                    </select>
+                    <input value="includeInPublicIndex" type="checkbox" name="includeInPublic" id="idIncludeInPublic">
+                    <label for="idIncludeInPublic">Include this course in the public course index</label>
+                </td>
+            </tr>
+            <br>
+            <tr>
+                <th>
+                    Format:
+                </th>
+                <td>
+                    <select name="editCourseFormat">
+                        <option selected value="onCampus">On-Compus</option>
+                        <option value="online">Online</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Mastery Paths:
+                </th>
+                <td>
+                    <input type="checkbox" value="enablePathsBasedOnAssess" name="enablePaths" id="idEnablePath">
+                    <label for="idEnablePath">Enable individual learning paths for students based on assessment</label>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Description:
+                </th>
+                <td>
+                    <textarea cols="35" rows="10"></textarea>
+                    <br>
+                    <a style="text-decoration: none; color: red">more options</a>
+                </td>
+            </tr>
+            
+        </table>
+        <hr style="color: gray; width: fit-content;">
+        <button>Update Course Details</button>
+
+ 
+    </form>
+</body>
+</html>

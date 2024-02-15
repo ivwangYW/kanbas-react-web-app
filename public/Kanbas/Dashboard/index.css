@@ -1,0 +1,46 @@
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.equal-height-card {
+    display: flex;
+    flex-direction: column;
+    
+  }
+/*endure image are same size*/
+.card-img-top {
+    border-top-left-radius: var(--bs-card-inner-border-radius);
+    border-top-right-radius: var(--bs-card-inner-border-radius);
+    height: 130px;
+}
+/* Ensures white space between courses is between 30 and 40 pixels */
+.mb-4 {
+    margin-bottom: 35px;
+}
+.equal-height {
+    display:flex;
+    justify-content: space-between;
+    width:300px;
+    min-width:300px;
+    max-width:300px;
+    margin-top:35px;
+    margin-bottom:35px;
+}
+
+btn-align {
+    
+    position: absolute;
+    bottom: 20px; /* Adjust this value to set the distance from the bottom of the card */
+    left: 10%;
+}
+
+.card-body {
+    padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+    color: var(--bs-card-color);
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

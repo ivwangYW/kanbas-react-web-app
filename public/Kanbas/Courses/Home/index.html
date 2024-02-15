@@ -3,117 +3,276 @@
 
 <head>
   <title>Home</title>
+
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
+  <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css" />
+  <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.css" />
+  <link rel="stylesheet" href="/Kanbas/Courses/Home/index.css" />
+
+  <!--new cdn link for font awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 </head>
 
 <body>
-    
-    <table>
-        <tbody>
-        <tr>
-            <td valign="top"> <!--Left Side Column-->
+    <div class="d-flex">
+        <div>
+            
+            <div>
                 <button>Collapse All</button>
-                <button>View Progress</button>
-                <select id="selectPublish">
-                    <option selected value="publishAll">Publish All</option>
-                    <option value="collapse">Collapse</option>
-                </select>
-                <button>Module</button>
-                <ul>
-                    <li>Week 0 - INTRO
-                        <ul>
-                            <li>LEARNING OBJECTIVES
+                    <button>View Progress</button>
+                    <select id="selectPublish">
+                        <option selected value="publishAll">Publish All</option>
+                        <option value="collapse">Collapse</option>
+                    </select>
+                    <button>Module</button>
+                
+            </div>
+            <div>
+                <ul class="list-group wd-modules">
+                    <li class="list-group-item">
+                        <div>
+                            <i class="fa fa-ellipsis-v margin-icon-general-css"></i>Week 0 - INTRO
+                            <span class="float-end">
+                                <i class="fa fa-check-circle text-success"></i>
+                                <i class="fa fa-plus ms-2"></i>
+                                <i class="fa fa-ellipsis-v ms-2"></i>
+                            </span>
+                        </div>
+                    
+                        <ul class="list-group">
+                            <li class="list-group-item"><i class="fa fa-ellipsis-v margin-icon-general-css"></i>LEARNING OBJECTIVES
+                                <span class="float-end">
+                                    <i class="fa fa-check-circle text-success"></i>
+                                    <i class="fa fa-ellipsis-v ms-2"></i>
+                                </span>
                                 <ul>
-                                    <li>Introduction to the course</li>
-                                    <li>Learn what is Web Development</li>
-                                    <li>Creating a development environment</li>
-                                    <li>Creating a Web Application</li>
-                                    <li>Getting started with the 1st assignment</li>
+                                    <li><i class="fa fa-ellipsis-v margin-icon-general-css"></i>
+                                        Introduction to the course<span class="float-end">
+                                            <i class="fa fa-check-circle text-success"></i>
+                                            <i class="fa fa-ellipsis-v ms-2"></i>
+                                        </span>
+                                    </li>
+                                    <li><i class="fa fa-ellipsis-v margin-icon-general-css"></i>Learn what is Web Development<span class="float-end">
+                                        <i class="fa fa-check-circle text-success"></i>
+                                        <i class="fa fa-ellipsis-v ms-2"></i>
+                                    </span></li>
+                                    <li><i class="fa fa-ellipsis-v margin-icon-general-css"></i>Creating a development environment<span class="float-end">
+                                        <i class="fa fa-check-circle text-success"></i>
+                                        <i class="fa fa-ellipsis-v ms-2"></i>
+                                    </span></li>
+                                    <li><i class="fa fa-ellipsis-v margin-icon-general-css"></i>Creating a Web Application<span class="float-end">
+                                        <i class="fa fa-check-circle text-success"></i>
+                                        <i class="fa fa-ellipsis-v ms-2"></i>
+                                    </span></li>
+                                    <li><i class="fa fa-ellipsis-v margin-icon-general-css"></i>Getting started with the 1st assignment<span class="float-end">
+                                        <i class="fa fa-check-circle text-success"></i>
+                                        <i class="fa fa-ellipsis-v ms-2"></i>
+                                    </span></li>
                                 </ul>
                             </li> 
-                            <li>READING
+                            <li class="list-group-item"><i class="fa fa-ellipsis-v margin-icon-general-css"></i>READING<span class="float-end">
+                                <i class="fa fa-check-circle text-success"></i>
+                                <i class="fa fa-ellipsis-v ms-2"></i>
+                            </span>
+                                
                                 <ul>
-                                    <li>Full Stack Developer -Chapter 1 - Introduction</li>
-                                    <li>Full Stack Developer - Chapter 2 - Creating User Interfaces With HTML</li>
+                                    <li><i class="fa fa-ellipsis-v margin-icon-general-css"></i>Full Stack Developer -Chapter 1 - Introduction<span class="float-end">
+                                        <i class="fa fa-check-circle text-success"></i>
+                                        <i class="fa fa-ellipsis-v ms-2"></i>
+                                    </span></li>
+                                    <li><i class="fa fa-ellipsis-v margin-icon-general-css"></i>Full Stack Developer - Chapter 2 - Creating User Interfaces With HTML<span class="float-end">
+                                        <i class="fa fa-check-circle text-success"></i>
+                                        <i class="fa fa-ellipsis-v ms-2"></i>
+                                    </span></li>
                                 </ul>
+                                
                             </li> 
-                            <li>SLIDES
+                            <li class="list-group-item"><i class="fa fa-ellipsis-v margin-icon-general-css"></i>SLIDES<span class="float-end">
+                                <i class="fa fa-check-circle text-success"></i>
+                                <i class="fa fa-ellipsis-v ms-2"></i>
+                            </span>
                                 <ul>
                                     <li>
-                                        <a href="">Introduction to Web Development Links to an external site</a>
+                                        <a href="#"><i class="fa fa-ellipsis-v margin-icon-general-css"></i>Introduction to Web Development Links to an external site<span class="float-end">
+                                            <i class="fa fa-check-circle text-success"></i>
+                                            <i class="fa fa-ellipsis-v ms-2"></i>
+                                        </span></a>
                                     </li>
                                     <li>
-                                        <a href="">Creating an HTTP server with Node.js Links to an external site</a></li>
+                                        <a href="#"><i class="fa fa-ellipsis-v margin-icon-general-css"></i>Creating an HTTP server with Node.js Links to an external site</a><span class="float-end">
+                                            <i class="fa fa-check-circle text-success"></i>
+                                            <i class="fa fa-ellipsis-v ms-2"></i>
+                                        </span></li>
                                     <li>
-                                        <a href="">Creating a React Application Links to an external site</a></li>
+                                        <a href="#"><i class="fa fa-ellipsis-v margin-icon-general-css"></i>Creating a React Application Links to an external site</a><span class="float-end">
+                                            <i class="fa fa-check-circle text-success"></i>
+                                            <i class="fa fa-ellipsis-v ms-2"></i>
+                                        </span></li>
                                 </ul>
                             </li>
                         </ul>
                     </li>
-                    <li>Week 1 - HTML
-                        <ul>
-                            <li>LEARNING OBJECTIVES
+                    <li class="list-group-item">
+                        <div>
+                            <i class="fa fa-ellipsis-v margin-icon-general-css"></i>Week 1 - HTML
+                                <span class="float-end">
+                                    <i class="fa fa-check-circle text-success"></i>
+                                    <i class="fa fa-plus ms-2"></i>
+                                    <i class="fa fa-ellipsis-v ms-2"></i>
+                                </span>
+                            </div>
+                        <ul class="list-group">
+                            <li class="list-group-item"><i class="fa fa-ellipsis-v margin-icon-general-css"></i>LEARNING OBJECTIVES
+                                    <span class="float-end">
+                                        <i class="fa fa-check-circle text-success"></i>
+                                        <i class="fa fa-ellipsis-v ms-2"></i>
+                                    </span>
                                 <ul>
-                                    <li>Learning how to create user interfaces with HTML</li>
-                                    <li>Keep working on assignment 1</li>
-                                    <li>Deploy the assignment to Netfly</li>
+                                    <li><i class="fa fa-ellipsis-v margin-icon-general-css"></i>Learning how to create user interfaces with HTML<span class="float-end">
+                                        <i class="fa fa-check-circle text-success"></i>
+                                        <i class="fa fa-ellipsis-v ms-2"></i>
+                                    </span></li>
+                                    <li><i class="fa fa-ellipsis-v margin-icon-general-css"></i>Keep working on assignment 1<span class="float-end">
+                                        <i class="fa fa-check-circle text-success"></i>
+                                        <i class="fa fa-ellipsis-v ms-2"></i>
+                                    </span></li>
+                                    <li><i class="fa fa-ellipsis-v margin-icon-general-css"></i>Deploy the assignment to Netfly<span class="float-end">
+                                        <i class="fa fa-check-circle text-success"></i>
+                                        <i class="fa fa-ellipsis-v ms-2"></i>
+                                    </span></li>
+                                </ul>
+                            </li>   
+                            <li class="list-group-item"><i class="fa fa-ellipsis-v margin-icon-general-css"></i>READING<span class="float-end">
+                                <i class="fa fa-check-circle text-success"></i>
+                                <i class="fa fa-ellipsis-v ms-2"></i>
+                            </span>
+                                <ul>
+                                    <li><i class="fa fa-ellipsis-v margin-icon-general-css"></i>Full Stack Developer -Chapter 1 - Introduction<span class="float-end">
+                                        <i class="fa fa-check-circle text-success"></i>
+                                        <i class="fa fa-ellipsis-v ms-2"></i>
+                                    </span></li>
+                                    <li><i class="fa fa-ellipsis-v margin-icon-general-css"></i>Full Stack Developer - Chapter 2 - Creating User Interfaces With HTML<span class="float-end">
+                                        <i class="fa fa-check-circle text-success"></i>
+                                        <i class="fa fa-ellipsis-v ms-2"></i>
+                                    </span></li>
                                 </ul>
                             </li>
-                            <li>READING
-                                <ul>
-                                    <li>Full Stack Developer -Chapter 1 - Introduction</li>
-                                    <li>Full Stack Developer - Chapter 2 - Creating User Interfaces With HTML</li>
-                                </ul>
-                            </li>
-                            <li>SLIDES</li>
+                            <li class="list-group-item"><i class="fa fa-ellipsis-v margin-icon-general-css"></i>SLIDES<span class="float-end">
+                                <i class="fa fa-check-circle text-success"></i>
+                                <i class="fa fa-ellipsis-v ms-2"></i>
+                            </span></li>
                         </ul>
                     </li>
                     
                 </ul>
-            </td>
-            <!--Right Side Column-->
-            <td valign="top"><!--align content in cell to the top of the cell-->
-                <h2>Course Status</h2>
+            </div>
+        </div>
+        <div class="d-none d-sm-none d-md-none d-lg-block">
+            <h2>Course Status</h2>
                 <button>Unpublish</button>
                 <button>Published</button>
-                <ul>
+                <ul class="wd-modules font-normal-css">
                     <li>
-                        <a href="">Import Existing Content</a>
+                        <a href=""><i class="fa fa-file-import margin-icon-general-css"></i>Import Existing Content</a>
                     </li>
                     <li>
-                        <a href="">Import From Commons</a>
+                        <a href=""><i class="fa-solid fa-arrow-up-wide-short margin-icon-general-css"></i>Import From Commons</a>
                     </li>
                     <li>
-                        <a href="">Choose Home Page</a>
+                        <a href=""><i class="fa-solid fa-bullseye margin-icon-general-css"></i>Choose Home Page</a>
                     </li>
                     <li>
-                        <a href="">View Course Stream</a>
+                        <a href=""><i class="fa-solid fa-bars-staggered margin-icon-general-css"></i>View Course Stream</a>
                     </li>
                     <li>
-                        <a href="">New Anouncement</a>
+                        <a href=""><i class="fa-solid fa-bullhorn margin-icon-general-css"></i>New Anouncement</a>
                     </li>
                     <li>
-                        <a href="">New Analytics</a>
+                        <a href=""><i class="fa-solid fa-bars-staggered margin-icon-general-css"></i>New Analytics</a>
                     </li>
                     <li>
-                        <a href="">View Course Notifications</a>
-                    </li>
-                </ul>
-                <h2>Comming Up</h2>
-                <a href="">View Calendar</a>
-                <ul>
-                    <li>
-                        <a href="">Lecture CS4550.12631.202410 Sep 7 at 11:45am</a>
-                    </li>
-                    <li>
-                        <a href="">CS4550.12631.202410 Sep 11 at 11:45am</a>
-                    </li>
-                    <li>
-                        <a href="">CS5610 06 SP23 Lecture Sep 11 at 6pm</a>
+                        <a href=""><i class="fa-regular fa-bell margin-icon-general-css"></i>View Course Notifications</a>
                     </li>
                 </ul>
-            </td>
-        </tr>
-    </tbody>
-</table>
+                <h2>To Do</h2>
+                <hr>
+                <ul>
+                    <li>
+
+                        <div class="notification ">
+                                <div>
+                                    <i class="fa-regular fa-solid fa-1 margin-icon-general-css" ></i>
+                                </div>
+                                
+                                <div>
+                                    <a href="#" class="no-underline-a "><span class="text-danger text-boldtext-css">
+                                        Grade A1 - ENV + HTML
+                                        <span class="notification-detail">100 points • Sep 18 at 11:59pm</span>
+                                    </span>
+                                    </a>
+                                </div>
+                                <div>
+                                    <button class="close-button float-end">&times;</button>
+                                </div>
+                            
+                          </div>
+                    </li>
+                    
+                </ul>
+
+                <div class="header-container">
+                    <div >
+                        <h2 class="inline-header">Coming Up</h2>
+                        <a href="#" class="no-underline-a calendar">
+                            <i class="fa-regular fa-calendar icon-css-2-gray margin-icon-general-css "></i> <span class="text-boldtext-css text-danger">View Calendar</span>
+                        </a>
+                    </div>
+                    
+                </div>
+                
+                <hr>
+                
+                
+                
+                
+                <ul>
+                    <li>
+                        <div class="coming-up">
+                            <a href="#" class="no-underline-a">
+                                <i class="fa-regular fa-calendar icon-css-2-gray margin-icon-general-css "></i> <span class="text-boldtext-css text-danger">Lecture</span>
+                                <span id="course_number" class="notification-detail">CS4550.12631.202410</span>
+                                <span id="date_time" class="notification-detail"> Sep 18 at 11:59pm</span>
+                            </a>
+                        </div>
+                        
+                    </li>
+                    <li>
+                        <div class="coming-up">
+                            <a href="#" class="no-underline-a">
+                                <i class="fa-regular fa-calendar icon-css-2-gray margin-icon-general-css "></i> <span class="text-boldtext-css text-danger">Lecture</span>
+                                <span id="course_number" class="notification-detail">CS4550.12631.202410</span>
+                                <span id="date_time" class="notification-detail"> Sep 11 at 11:45am</span>
+                            </a>
+                        </div>
+                        
+                    </li>
+                    <li>
+                        <div class="coming-up">
+                            <a href="#" class="no-underline-a">
+                                <i class="fa-regular fa-calendar icon-css-2-gray margin-icon-general-css "></i> <span class="text-boldtext-css text-danger">Lecture</span>
+                                <span id="course_number" class="notification-detail">CS5610.06.SP23.Lecture</span>
+                                <span id="date_time" class="notification-detail"> Sep 11 at 6pm</span>
+                            </a>
+                        </div>
+                        
+                    </li>
+                </ul>
+        </div>
+    </div>
+    
+
+    
 </body>
 </html>

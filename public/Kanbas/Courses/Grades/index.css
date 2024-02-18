@@ -1,0 +1,32 @@
+
+.gray-bg-color-css {
+    background-color: rgb(209, 209, 209);
+}
+
+.font-bold-css {
+    font-weight: bold;
+}
+
+
+
+/*******************************/
+.table-custom {
+    width: 100%; /* Ensures that the table width is 100% */
+}
+
+.table-custom th, .table-custom td {
+    width: 20%; /* Sets each column to an equal width of 20% (since there are 5 columns) */
+    text-align: center; /* Centers the text in the column */
+    overflow: hidden; /* Ensures content doesn't overflow */
+}
+.table-custom tbody tr:nth-child(odd) {
+    background-color: #f2f2f2; /* Light gray for odd rows */
+}
+.table-custom tbody tr:nth-child(even) {
+    background-color: gray; /* White for even rows */
+}
+
+.table-custom input[type='number'] {
+    max-width: 150px;
+}
+

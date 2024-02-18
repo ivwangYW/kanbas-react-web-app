@@ -1,0 +1,54 @@
+.space-between {
+    display: flex;;
+    justify-content: space-between;
+}
+
+.screen-flex-row-css {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.radius-rounded-pill-css {
+    border: 2px solid #706e6e; /* Change the color hex code to what you need */
+    border-radius: 20px; /* This value may be adjusted for more or less roundness */
+    padding: 1px 3px; /* Top and bottom, left and right padding */
+    display: inline-block;
+    text-align: center;
+    margin:2px;
+}
+.center-vertical-css {
+    display: flex;
+    align-items: center; /* Aligns children vertically in the center */
+}
+.flex-container-css {
+    display: flex;
+    align-items: center; /* This aligns children vertically in the center */
+    justify-content: space-between; /* This separate
+    s the items to each end; adjust as needed */
+}
+a .unit-name {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+a .unit-gray-subtitle {
+    color: gray;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.bold-text-css {
+    font-weight: bold;
+}
+.button-gray-sm-css {
+    background-color: rgb(191, 191, 191);
+    border-color:  rgb(191, 191, 191);
+}
+
+.wide-section-css {
+    width: 100%;
+    
+}
+

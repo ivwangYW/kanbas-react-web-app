@@ -4,13 +4,15 @@ function CourseNavigation() {
 const links = ["Home", "Modules", "Piazza", "Grades", "Assignments"];
 const { pathname } = useLocation();
 return (
-<ul className="wd-navigation">
+<div className="w-20 float-start ">
+<ul className="wd-navigation ">
 {links.map((link, index) => (
 <li key={index} className={pathname.includes(link) ? "wd-active" : ""}>
 <Link to={link}>{link}</Link>
 </li>
 ))}
 </ul>
+</div>
 );
 }
 export default CourseNavigation;

@@ -7,9 +7,14 @@ import Courses from "./Courses";
 
 function Kanbas() {
 return (
-<div className="d-flex">
-<KanbasNavigation />
-    <div style={{ flexGrow: 1 }}>
+<div className="d-flex ">
+    {/*******************************left Kanbas Navigation Bar************/}
+    
+    <KanbasNavigation />
+    
+    {/*******************************right side*****************************/}
+
+    <div  style={{ flexGrow: 1 }}>
         <Routes>
             <Route path="/" element={<Navigate to="Dashboard" />} />
             <Route path="Account" element={<h1>Account</h1>} />
@@ -17,7 +22,9 @@ return (
             <Route path="Courses/:courseId/*" element={<Courses />} />
         </Routes>
     </div>
+    
 </div>
+
 );
 }
     export default Kanbas

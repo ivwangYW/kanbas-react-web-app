@@ -13,29 +13,31 @@ const { courseId } = useParams();
 const course = courses.find((course) => course._id === courseId);
 
 return (
-<div className="container">
+<div className="container ">
 
-<div id="top-white-bar" className="row" >
-    <div className="space-between position-fixed col m-2 text-danger d-none d-md-block d-lg-block float-start " >
-        <div className="float-start ">
-            <h1 className="font-size-top-bar "><HiMiniBars3 /> Course {course?.name}</h1>
-        </div>
-        <div className="btn gray-button-color float-end " >
+<div  id="top-white-bar" className="row space-between " >
+    <div className=" col m-2 text-danger d-none d-md-block d-lg-block float-start " >
+        
+        <h1 className="font-size-top-bar float-start "><HiMiniBars3 /> Course {course?.name}</h1>
+    </div>
+    <div className="col">
+        <div className=" btn gray-button-color float-end " >
             <a className="no-underline-a text-black" href="#"><FaGlasses className="me-2"/>Student View</a> 
         </div>
-        
     </div>
+        
+</div>
 
 
-<div className="row "  >
-    <div className="col text-danger d-none d-md-block d-lg-block float-start">
+<div className="row-auto"  >
+    <div className=" col-auto text-danger d-none d-md-block d-lg-block ">
         <CourseNavigation />
     </div>
 
 
-    <div className="col " >
+    <div className="col-auto">
     <div
-    className="overflow-y-scroll position-fixed bottom-0 end-0"
+    className="overflow-y-scroll position-fixed bottom-0 end-0 row"
     style={{ left: "320px", top: "50px" }} >
     <Routes>
     <Route path="/" element={<Navigate to="Home" />} />
@@ -48,10 +50,11 @@ return (
     </Routes>
     </div>
     </div>
+    
 
 </div>
 </div>
-</div>
+
 );
 }
 export default Courses;

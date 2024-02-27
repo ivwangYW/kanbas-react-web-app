@@ -1,0 +1,25 @@
+.font-size-top-bar {
+    font-size:25px;
+    font-weight:500;
+}
+.no-underline-a {
+    text-decoration:none;
+}
+
+.gray-button-color {
+    background-color: rgb(193, 191, 191);
+}
+.end-css {
+    display: flex;
+    justify-content: end;
+    
+  
+}
+
+.flex-virtical {
+    display: flex;
+    flex-direction:column;
+}
+
+
+

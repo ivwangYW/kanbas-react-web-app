@@ -85,7 +85,7 @@ ul {
 /* delete    */
 .notification {
     display: flex;
-    align-items: center;
+    align-items: start;
     padding: 8px;
     border-radius: 5px;
     position: relative;

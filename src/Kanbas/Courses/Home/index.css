@@ -1,0 +1,33 @@
+.status-bar li {
+    text-align: start;
+
+}
+
+.iconStyle {
+    padding: 2px;
+}
+
+.icon-size-css {
+    font-size: 30px;
+}
+
+
+.min-width-css-module {
+    min-width: 500px;
+}
+
+@media (min-width: 600px) { /* match Bootstrap's medium breakpoint */
+    .min-width-css-module {
+        min-width: 600px; /* Reset min-width or set to any value you need */
+    }
+}
+
+.max-width-css-side-bar {
+    max-width: 350px;
+}
+
+@media (max-width: 250px) { /* match Bootstrap's medium breakpoint */
+    .max-width-css-side-bar {
+        max-width: 250px; /* Reset min-width or set to any value you need */
+    }
+}

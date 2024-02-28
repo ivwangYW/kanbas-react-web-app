@@ -19,7 +19,7 @@ const links = [
 
 const { pathname } = useLocation();
 return (
-<div className="overflow-y-scroll "> {/*added */}
+<div className="overflow-y-scroll"> {/*added */}
 
 <ul className="wd-kanbas-navigation">
 <li><img src="../../images/neu.png" alt="N" className="neu-logo"/></li>

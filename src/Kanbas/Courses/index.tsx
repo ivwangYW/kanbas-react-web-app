@@ -31,7 +31,7 @@ return (
 </div>
 
 
-<div className="row-auto"  >
+<div className="row-auto overflow-y-scroll"  >
     <div className=" col-auto text-danger d-none d-md-block d-lg-block ">
         <CourseNavigation />
     </div>

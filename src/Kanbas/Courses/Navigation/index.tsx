@@ -1,10 +1,12 @@
 import { Link, useLocation } from "react-router-dom";
 import "./index.css"; // feel free to use the CSS from previous assignments
 import { FaRegEyeSlash } from "react-icons/fa6";
+import {links, restrictView} from "../../commonData";
 
 function CourseNavigation() {
-const links = ["Home", "Modules", "Piazza", "Grades", "Assignments", "Quizes", "Grades", "People", "Panoto Video", "Discussions", "Announcement", "Pages", "Files", "Rubrics", "Outcomes", "Collaborations", "Syllabus", "Settings"];
-const restrictView = ["Files", "Rubrics", "Outcomes", "Collaborations", "Syllabus", "Settings"]; {/*Added*/}
+    
+//const links = ["Home", "Modules", "Piazza", "Grades", "Assignments", "Quizes", "Grades", "People", "Panoto Video", "Discussions", "Announcement", "Pages", "Files", "Rubrics", "Outcomes", "Collaborations", "Syllabus", "Settings"];
+//const restrictView = ["Files", "Rubrics", "Outcomes", "Collaborations", "Syllabus", "Settings"]; {/*Added*/}
     
     {/*get the corresponding restrictView class for certain link*/}
     function viewRestrictClasses_JSON_array_fun (link:string){

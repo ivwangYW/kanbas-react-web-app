@@ -1,0 +1,27 @@
+.gray-background {
+    background-color: rgb(186, 183, 183);
+}
+
+
+.button-red-assignment-css{
+    
+    background-color: rgb(217, 7, 7);
+    color: white;
+    width: 120px;
+    
+}
+
+.min-width-div {
+    min-width: 200px;
+}
+
+.assignment-title-css {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+
+}
+
+.height-of-row-button-css {
+    height: 100px;
+}

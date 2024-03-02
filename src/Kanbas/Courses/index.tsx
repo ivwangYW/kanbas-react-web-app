@@ -10,6 +10,7 @@ import { FaGlasses } from "react-icons/fa";
 import Home from "./Home";
 import PathTracker from "./PathTracker/pathTracker";
 import Assignments from "./Assignments";
+import AssignmentEditor from "./Assignments/Editor";
 
 function Courses() {
 //moved to pathTracker          const { courseId } = useParams();
@@ -50,7 +51,7 @@ return (
     <Route path="Modules" element={<Modules/>} />
     <Route path="Piazza" element={<h1>Piazza</h1>} />
     <Route path="Assignments" element={<Assignments/>} />
-    <Route path="Assignments/:assignmentId" element={<h1>Assignment Editor</h1>} />
+    <Route path="Assignments/:assignmentId" element={<AssignmentEditor/>} />
     <Route path="Grades" element={<h1>Grades</h1>} />
     </Routes>
     </div>

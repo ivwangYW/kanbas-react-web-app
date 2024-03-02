@@ -4,6 +4,7 @@ import { Link, useParams } from "react-router-dom";
 import { assignments } from "../../Database";
 import { BsThreeDotsVertical } from "react-icons/bs";
 import { MdOutlineNoteAlt } from "react-icons/md";
+
 import "./index.css";
 function Assignments() {
 const { courseId } = useParams();

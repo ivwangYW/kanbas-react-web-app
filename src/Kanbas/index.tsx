@@ -4,26 +4,27 @@ import KanbasNavigation from "./Navigation";
 import { Routes, Route, Navigate } from "react-router-dom";
 import Dashboard from "./Dashboard";
 import Courses from "./Courses";
+import "./styles.css"
 
 
 function Kanbas() {
 return (
-<div className="d-flex ">
-    {/*******************************left Kanbas Navigation Bar************/}
-    
-    <KanbasNavigation />
-    
-    {/*******************************right side*****************************/}
+<div className="row no-gutter-row-css no-padding-left-row-css " >
+        {/*******************************left Kanbas Navigation Bar************/}
+        <div className="col-auto width-left-bar-css  bottom-0 start-0 top-0 overflow-y-scroll ">
+            <KanbasNavigation />
+        </div>
+        {/*******************************right side*****************************/}
 
-    <div  style={{ flexGrow: 1 }}  >
-        <Routes>
-            <Route path="/" element={<Navigate to="Dashboard" />} />
-            <Route path="Account" element={<h1>Account</h1>} />
-            <Route path="Dashboard" element={<Dashboard />} />
-            <Route path="Courses/:courseId/*" element={<Courses />} />
-            
-        </Routes>
-    </div>
+        <div  className="col margin-left-middle-bar "   style={{ flexGrow: 1}}  >
+            <Routes>
+                <Route path="/" element={<Navigate to="Dashboard" />} />
+                <Route path="Account" element={<h1>Account</h1>} />
+                <Route path="Dashboard" element={<Dashboard />} />
+                <Route path="Courses/:courseId/*" element={<Courses />} />
+                
+            </Routes>
+        </div>
     
 </div>
 

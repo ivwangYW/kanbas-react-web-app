@@ -29,5 +29,18 @@
     margin:4px;
 }
 
+.top-bar-height-css {
+    height: 50px;
+}
+.margin-top-css {
+    margin-top: 50px;
+}
+.scroll-css {
+    
+    max-height: calc(100vh - 50px); /* Adjust the 50px to account for your top bar's actual height */
+    overflow-y: scroll; /* This forces the scrollbar to appear if the content overflows */
+    
+}
+
 
 

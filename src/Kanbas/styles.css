@@ -5,3 +5,17 @@ body {
     body * {
     font-family: Arial, Helvetica, sans-serif;
     }
+
+
+.no-gutter-row-css {
+        --bs-gutter-x: 0; /* This removes the default horizontal gutter. */
+}
+.no-padding-left-row-css {
+    padding-left: 0 !important;
+}
+.width-left-bar-css {
+    width: 30px;
+}
+.margin-left-middle-bar {
+    margin-left:30px;
+}

@@ -20,12 +20,12 @@ function Courses() {
 
 
 return (
-<div className="container ">
+<div className="container">
 
-<div  id="top-white-bar" className="row space-between " >
+<div  id="top-white-bar" className="row space-between top-bar-height-css" >
     <div className=" col m-2 text-danger d-none d-md-block d-lg-block float-start " >
         
-        <span className="font-size-top-bar float-start "><HiMiniBars3 /> </span><PathTracker/>
+        <span className="font-size-top-bar float-start"><HiMiniBars3 /> </span><PathTracker/>
     </div>
     <div className="col">
         <div className=" btn gray-button-color float-end " >
@@ -36,9 +36,13 @@ return (
 </div>
 
 
-<div className="row-auto overflow-y-scroll"  >
-    <div className=" col-auto text-danger d-none d-md-block d-lg-block ">
+<div className="row-auto "  >
+    <div className=" col-auto text-danger d-none d-md-block d-lg-block overflow-y-scroll position-fixed margin-top-css scroll-css">
+        <>
+
+        
         <CourseNavigation />
+        </>
     </div>
 
 

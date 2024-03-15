@@ -15,15 +15,17 @@ function CourseNavigation() {
     
 const { pathname } = useLocation();
 return (
-<div className="w-20 float-start ">
-<ul className="wd-navigation ">
-{links.map((link, index) => (
-<li key={index} className={`text-start ${pathname.includes(link) ? "wd-active " : ""} ${viewRestrictClasses_JSON_array_fun(link)}`}>
-<Link  to={link}>{link}</Link> 
-{viewRestrictClasses_JSON_array_fun(link)=="restricted" && <FaRegEyeSlash className="float-end text-black"/>}
-</li>
-))}
-</ul>
+<div className="w-20 float-start " >
+    <div >
+        <ul className="wd-navigation">
+        {links.map((link, index) => (
+        <li key={index} className={`text-start ${pathname.includes(link) ? "wd-active " : ""} ${viewRestrictClasses_JSON_array_fun(link)}`}>
+        <Link  to={link}>{link}</Link> 
+        {viewRestrictClasses_JSON_array_fun(link)=="restricted" && <FaRegEyeSlash className="float-end text-black"/>}
+        </li>
+        ))}
+        </ul>
+    </div>
 </div>
 );
 }

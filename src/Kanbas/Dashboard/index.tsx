@@ -12,9 +12,9 @@ return (
 <div className="row row-cols-1 row-cols-md-5 g-4">
 {courses.map((course) => (
 <div key={course._id} className="col" style={{ width: 300 }}>
-<div className="card shadow p-3 mb-5 bg-white rounded">
-<img src={`./images/${course.image}`} alt={"course"} className="card-img-top"
-style={{ height: 150 }}/>
+<div className="card shadow p-0 mb-5 bg-white rounded ">
+<img src={`./images/${course.image}`} alt={"course"} className="card-img-top m-0"
+ style={{ height: 150 }}/>
 <div className="card-body">
 <Link className="card-title" to={`/Kanbas/Courses/${course._id}/Home`}
 style={{ textDecoration: "none", color: "navy", fontWeight: "bold" }}>

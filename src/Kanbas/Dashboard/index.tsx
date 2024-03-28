@@ -16,6 +16,17 @@ function Dashboard() {
             setCourses([...courses,{...course,...newCourse}]);
         };
     const deleteCourse =(courseId:string) => {setCourses(courses.filter((course)=> course._id !== courseId));};
+    const updateCourse = () => {
+        setCourses(
+        courses.map((c) => {
+        if (c._id === course._id) {
+        return course;
+        } else {
+        return c;
+        }
+        })
+        );
+        };
 return (
 
 <div className="p-4">
@@ -32,6 +43,10 @@ onChange={(e) => setCourse({ ...course, endDate: e.target.value }) } />
 <button className= "btn m-button-add" onClick={addNewCourse} >
 Add
 </button>
+<button className= "btn m-button-add" onClick={updateCourse} >
+Update
+</button>
+
 <h2>Published Courses (12)</h2> <hr />
 <div className="row m-4">
 <div className="row row-cols-1 row-cols-md-5 g-4">
